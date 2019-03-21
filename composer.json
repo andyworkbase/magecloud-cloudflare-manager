@@ -1,6 +1,6 @@
 {
   "name": "andyworkbase/magecloud-cloudflare-manager",
-  "description": "Cloudflare Manager",
+  "description": "Cloudflare service manager",
   "version": "1.0.0",
   "license": "MIT",
   "require": {
