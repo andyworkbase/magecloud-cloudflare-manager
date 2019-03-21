@@ -1,10 +1,10 @@
-<h1>Cloudflare service manager<h1>
+<h1>Cloudflare service manager</h1>
 
 <strong>Manager</strong> - System -> Cache Management -> Cloudflare Manager
 
 <strong>Configuration</strong> - Stores -> Configuration -> MageCloud -> Cloudflare Manager
 
-<h2>Features:<h2>
+<h2>Features:</h2>
 <ul>
 <li>check Cloudflare services state;</li>
 <li>purge Cloudflare service cache bu URL(s);</li>
