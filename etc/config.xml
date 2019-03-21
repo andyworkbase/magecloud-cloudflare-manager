@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author andy
+ * @email andyworkbase@gmail.com
+ * @team MageCloud
+ * @package MageCloud_CloudflareManager
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <cloudflare>
+            <general>
+                <enabled>0</enabled>
+                <email_address></email_address>
+                <api_key></api_key>
+                <zone_id></zone_id>
+                <api_endpoint>https://api.cloudflare.com/client/v4/zones/</api_endpoint>
+                <purge_auto>0</purge_auto>
+            </general>
+        </cloudflare>
+    </default>
+</config>

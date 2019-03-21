@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author andy
+ * @email andyworkbase@gmail.com
+ * @team MageCloud
+ * @package MageCloud_CloudflareManager
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="MageCloud\CloudflareManager\Block\Backend\Cloudflare" name="adminhtml.cloudflare.manager.toolbar"/>
+        </referenceContainer>
+        <referenceContainer name="before.body.end">
+            <block class="MageCloud\CloudflareManager\Block\Adminhtml\Manager\Modal"
+                   name="adminhtml.cloudflare.manager.container"
+                   as="adminhtml.cloudflare.manager.container"
+                   template="MageCloud_CloudflareManager::manager.phtml"
+                   cacheable="false">
+                <arguments>
+                    <argument name="types" xsi:type="array">
+                        <item name="by_url" xsi:type="string">by_url</item>
+                        <item name="all" xsi:type="string">all</item>
+                    </argument>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="cloudflareManager" xsi:type="array">
+                                <item name="component" xsi:type="string">MageCloud_CloudflareManager/js/view/manager</item>
+                                <item name="children" xsi:type="array">
+                                    <!-- merge your components here -->
+                                </item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

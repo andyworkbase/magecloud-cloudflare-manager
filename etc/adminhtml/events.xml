@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author andy
+ * @email andyworkbase@gmail.com
+ * @team MageCloud
+ * @package MageCloud_CloudflareManager
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="controller_action_predispatch_adminhtml_system_config_edit">
+        <observer name="magecloud_cloudflare_manager_system_config_notice" instance="MageCloud\CloudflareManager\Observer\Admin\SystemConfigNotice" />
+    </event>
+    <event name="controller_action_predispatch_adminhtml_cache_index">
+        <observer name="magecloud_cloudflare_manager_cache_management_notice" instance="MageCloud\CloudflareManager\Observer\Backend\CacheManagementNotice" />
+    </event>
+    <event name="adminhtml_cache_flush_all">
+        <observer name="magecloud_cloudflare_manager_purge_cache" instance="MageCloud\CloudflareManager\Observer\PurgeCache" />
+    </event>
+</config>

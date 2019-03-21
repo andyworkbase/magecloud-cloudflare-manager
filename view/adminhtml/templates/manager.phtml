@@ -1,0 +1,21 @@
+<?php
+
+// @codingStandardsIgnoreFile
+
+/** @var MageCloud\CloudflareManager\Block\Adminhtml\Manager\Modal $block */
+?>
+
+<div id="cloudflareManager" data-bind="scope: 'cloudflareManager'" style="display: none">
+    <script>
+        window.cloudflareManager = <?= /* @noEscape */ $block->getSerializedConfig() ?>;
+    </script>
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+        {
+            "#cloudflareManager": {
+                "Magento_Ui/js/core/app": <?= /* @noEscape */ $block->getJsLayout() ?>
+            }
+        }
+    </script>
+</div>
+

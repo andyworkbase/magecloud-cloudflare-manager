@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author andy
+ * @email andyworkbase@gmail.com
+ * @team MageCloud
+ * @package MageCloud_CloudflareManager
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="magecloud_cloudflare_manager_state" xsi:type="object">MageCloud\CloudflareManager\Console\Command\State</item>
+                <item name="magecloud_cloudflare_manager_purge_by_url" xsi:type="object">MageCloud\CloudflareManager\Console\Command\PurgeByUrl</item>
+                <item name="magecloud_cloudflare_manager_purge_all" xsi:type="object">MageCloud\CloudflareManager\Console\Command\PurgeAll</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
