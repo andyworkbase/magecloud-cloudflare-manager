@@ -1,5 +1,5 @@
 {
-  "name": "magecloud/module-cloudflare-manager",
+  "name": "andyworkbase/magecloud-cloudflare-manager",
   "description": "Cloudflare Manager",
   "version": "1.0.0",
   "license": "MIT",
@@ -9,18 +9,12 @@
     "magento/module-page-cache": "100.1.*"
   },
   "type": "magento2-module",
-  "repositories": [
-    {
-      "type": "git",
-      "url": "git@github.com:andyworkbase/magecloud-cloudflare-manager.git"
-    }
-  ],
   "autoload": {
     "files": [
       "registration.php"
     ],
     "psr-4": {
-      "Magecloud\\CloudflareManager\\": ""
+      "MageCloud\\CloudflareManager\\": ""
     }
   }
 }
