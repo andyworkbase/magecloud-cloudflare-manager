@@ -1,11 +1,11 @@
 <h1>Cloudflare service manager</h1>
 
 <h2>Installation:</h2>
-<strong>Composer:</strong>
-composer require andyworkbase/magecloud-cloudflare-manager
+<strong>Composer:</strong> <br/>
+composer require andyworkbase/magecloud-cloudflare-manager <br/>
 composer update
 
-<strong>Manually:</strong>
+<strong>Manually:</strong> <br/>
 1) unpack extension package and upload them into Magento root directory/app/code/
 2) php bin/magento setup:upgrade
 3) php bin/magento setup:di:compile
