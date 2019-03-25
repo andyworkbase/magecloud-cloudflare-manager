@@ -12,10 +12,10 @@ use MageCloud\CloudflareManager\Helper\Data as HelperData;
 use Magento\Framework\Message\ManagerInterface;
 
 /**
- * Class SystemConfig
+ * Class SystemConfigNotice
  * @package MageCloud\CloudflareManager\Observer\Admin
  */
-class SystemConfig implements ObserverInterface
+class SystemConfigNotice implements ObserverInterface
 {
     /**
      * @var HelperData
